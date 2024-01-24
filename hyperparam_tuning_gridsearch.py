@@ -1,6 +1,26 @@
-# https://youtu.be/Bzsxq1JJbbo
+# https://youtu.be/f20fU6so580
+"""
+@author: Sreenivas Bhattiprolu
+
+Optimizing MNIST classification using Grid Search
+
+Grid search hyperparameters - 
+Finding the best model and corresponding hyperparameters
+Using traditional ML: Random Forest, SVM, Logistic Regression
 
 
+Use GridSearchCV class from scikit-learn
+
+Keras models can be used in scikit-learn by wrapping them with 
+the KerasClassifier or KerasRegressor class.
+
+In GridSearchCV:
+n_jobs = -1 --> uses multiple cores (parallelized). May crash your system!
+n_jobs = 1 --> do not parallelize (do this only if you get an error with -1)
+
+n_jobs=16 --> uses 16 CPUs. Make sure your system has that many CPUs
+
+"""
 import tensorflow as tf
 import keras
 from keras.layers import Dense
